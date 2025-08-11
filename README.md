@@ -20,8 +20,8 @@ Contact Form Solution
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
-- Live Site URL: [Github Pages](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/Ellamonacillo/contact-form.github.io)
+- Live Site URL: [Github Pages](https://ellamonacillo.github.io/contact-form.github.io/)
 
 ## My process
 
