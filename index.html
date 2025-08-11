@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/output.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  
+  <title>Frontend Mentor | Contact form</title>
+</head>
+<body class="bg-light-green min-h-screen w-full flex flex-col justify-center items-center font-karla">
+
+  <main class="px-5 py-7 w-full flex justify-center">
+    <form action="#">
+      <h1>Contact Us</h1>
+      <div class="name">
+        <div>
+          <label for="first-name">First Name <span class="required">*</span></label>
+          <input type="text" id="first-name" name="first-name" autocomplete="given-name" aria-describedby="first-error" />
+          <span id="first-error" class="error" aria-hidden="true" hidden>This field is required</span>
+        </div>
+        
+        <div>
+          <label for="last-name">Last Name <span class="required">*</span></label>
+          <input type="text" id="last-name" name="last-name" autocomplete="family-name" aria-describedby="last-error" />
+          <span id="last-error" class="error" aria-hidden="true" hidden>This field is required</span>
+        </div>
+      </div>
+
+      <div class="email">
+        <label for="email">Email Address <span class="required">*</span></label>
+        <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error" />
+        <span id="email-error" class="error" aria-hidden="true" hidden>Please enter a valid email address</span>
+      </div>
+
+      <fieldset class="query">
+        <legend>Query Type <span class="required">*</span></legend>
+
+        <div>
+          <label for="query-general">
+            <input type="radio" id="query-general" name="query" value="General Enquiry" aria-describedby="query-error" />
+            <span>General Enquiry</span>
+          </label>
+
+          <label for="support-request">
+            <input type="radio" id="support-request" name="query" value="Support Request" />
+            <span>Support Request</span>
+          </label>
+        </div>
+
+        <span id="query-error" class="error" aria-hidden="true" hidden>Please select a query type</span>
+      </fieldset>
+
+      <div class="message">
+        <label for="message">Message <span class="required">*</span></label>
+        <textarea name="message" id="message" aria-describedby="message-error" class="h-60 md:h-25"></textarea>
+        <span id="message-error" class="error" aria-hidden="true" hidden>This field is required</span>
+      </div>
+      
+      <div class="consent">
+        <label for="consent">
+          <input type="checkbox" id="consent" name="consent" aria-describedby="consent-error" />
+          <span>I consent to being contacted by the team <span class="required">*</span></span>
+        </label>
+        <span id="consent-error" class="error" aria-hidden="true" hidden>
+          To submit this form, please consent to being contacted 
+        </span>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <section class="success-message" aria-hidden="true" hidden>
+      <div class="max-w-md p-5 rounded-none md:rounded-xl bg-darker-grey">
+        <div class="inline-flex space-x-2">
+          <img src="./assets/images/icon-success-check.svg" alt="Success Icon" />
+          <h2 class="text-white">Message Sent!</h2>
+        </div>
+        <h4 class="text-medium-grey">Thanks for completing the form. We'll be in touch soon!</h4>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" aria-label="View Frontend Mentor in a new tab" rel="noopener">Frontend Mentor</a>. 
+    Coded by <a href="https://mariellamonacillo.netlify.app" target="_blank" aria-label="View MGM website in a new tab" rel="noopener">MGM</a>.
+  </footer>
+
+  <script src="./src/script.js"></script>
+  
+</body>
+</html>
